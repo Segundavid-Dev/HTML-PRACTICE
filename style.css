@@ -1,5 +1,5 @@
 *{
-    padding: 10px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -8,9 +8,19 @@ body{
     font-family:'Segoe UI';
     background-color: #333;
     color: whitesmoke;
+    /* padding: 2rem; */
+    /* margin: 2rem; */
 }
 
 img{
     width: 300px;
     border-radius: 3rem;
+}
+
+a{
+    color: whitesmoke;
+}
+
+section{
+    padding: 2rem;
 }

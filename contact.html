@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        padding: 2rem;
+    }
+</style>
+<body>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="firstName">Firstname:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required >
+        <br><br>
+
+        <label for="lastName">lastname:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="5555555555" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}"> <br> <br>
+
+        <label for="coffee">Favourite Coffee</label> 
+        <select name="coffee" id="coffee">
+            <optgroup label="Coffee">
+            <option value="regular Coffee">regular coffee</option>
+            <option value="iced coffee">iced coffee</option>
+            <option value="latte">latte</option>
+            <option value="cortado">cortado</option>
+            <option value="americano">americano</option>
+            <option value="other">Other</option>
+        </optgroup>
+        </select>
+    </form>
+</body>
+</html>
